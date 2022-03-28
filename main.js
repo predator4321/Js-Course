@@ -1,142 +1,231 @@
-
-// my discord name      GikKs
-
-
-
-
-/* მოგესალმებით მეგობრებო ეს არის დავალება ნომერი 1. დავალების ყველა ეტაპი აღწერილია კომენტარის სახით
- * 1) კომენტარები
- * 2) ცვლადები
- * 3) მონაცემთა ტიპები
- * 4) ოპერატორები და არითმეტიკა
- */
+ /* მოგესალმებით მეგობრებო ეს არის დავალება ნომერი 2. დავალების ყველა ეტაპი აღწერილია კომენტარის სახით
+  * 1) შედარება
+  * 3) If პირობები
+  * 4) ლოგიკური ოპერატორები
+// //  * 5) Switch 
+// //  */
 
 
 
-// 1 კომენტარები
+// // // <------- შედარება ---------#### //
 
-/*
-  // კომენტარები გაფუჭდა თქვენი დავალებაა
-  // არასწორად დაწერილი კომენტარი ჩაასწოროთ
-  // და ასევე გამოიყენოთ თქვენი კოდის აღსაწერად
-*/
+ const num1 = 0;
+ const boolean1 = false;
+ const num2 = 5;
+ const emptyString = "";
+ const boolean2 = false;
+ const text = "I'm Text";
+const text2 = "0";
 
+// // // ჩამოწერეთ ცვლადები რომელი არის true რომელი false
+// // // ჩამოწერეთ ზეპირად!
+// // // მაგ. [1, 2, 3, 4]
 
+// // // >>> კოდი დაწერეთ აქ 
 
-// 2 ცვლადები
+ const isFalse = [2,5,7];
+ const isTrue = [1,3,4,6];
 
-/*
-  // მსურს ჩემი Spotify ლისტის განახლება 
-  // ამაში კი თქვენი დახმარება მჭირდება
-  // აღწერეთ თქვენი საყვარელი მომღერლის
-  // (სახელი, გვარი, ასაკი, დაბადების წელი, დაბადების ადგილი,)
-  // გაითვალისწინეთ რომ ამისთვის უნდა
-  // გამოიყენოთ მხოლოდ (const, let)
-  // (ნებისმიერი პიროვნების ჩაწერა შეგიძლიათ)
-*/
-
-// >>>> კოდი დაწერეთ აქ
-const name = 'გია';
-const surname = 'სურამელაშვილი';
-let asaki = 53;
-const birthyear = 1969;
-const birthplace = 'Georgia';
-
-// 
-
-/*
-  // დროა დავიწყოთ მზადება ჩვენს მომავალ პროექტზე.
-  // ჩვენი დავალეებაა მოვიფიქროთ რაიმე პროდუქტთა სია
-  // რომელსაც გამოვიყენებთ მომავალში.
-
-  წიგნების მაღაზიის მაგალითი:
-
-  const BookName = "ვეფხისტყაოსანი";
-  const AuthrName = "შოთა რუსთაველი";
-  const CreateDate = "13 საუკუნე";
-  let ProductQuant = 124;
-*/
+// // //
 
 
-// >>>> კოდი დაწერეთ აქ
-const Phone = 'Iphone 8';
-const brand = 'Apple';
-const CreateDate = '15 April,2020';
-let ProductQuant = 200;
+// // // შეცვალეთ ერთი ასო რომ მიიღოთ ჭეშმარიტი დებულება
+// // // მოკლედ ახსენით მუშაობის პრინციპი თუ რატომ იმოქმედა
 
-//
+  console.log("abc" > "a");
+ console.log('004' === "004");
 
 
 
-// 3 მონაცემთა ტიპები
+// // // <------- ლოგიკური ოპერატორები ---------#### //
 
-/*
-  // აქ რაღაც შეცდომაა თქვენი დავალებაა ცვლადის გამოცხადების
-  // დროს გაასწოროთ შეცდომა;
-*/
+// // // შეამოწმეთ სრულ წლოვნებაზე და თუ მეტი ან ტოლია
+// // // 18 წელზე შესთავაზეთ სასმელი
 
+// // // >>> კოდი დაწერეთ აქ 
+ let checkAge = Number(prompt('Enter Your Age : '));
+ if (checkAge>=18){
+     window.alert('Do you want to drink');
+ }
+ else{
+    window.alert('You can not drink');
+}
 
-
-let  age = 1;
-const hisName = "bob";
-let isHigh = true;
-const dateOfBirth = 1995;
-
-
-
-
-// ეს კოდი ამოწმებს თქვენ მიერ მითითებულ ტიპებს
-
-// თქვენი მიზანია დააბრუნოთ პირველი 4 frue
-
-console.log(typeof age === "number");
-console.log(typeof hisName === "string");
-console.log(typeof isHigh === "boolean");
-console.log(typeof dateOfBirth === "number")
+// // //
 
 
+// // // მოიფიქრეთ 2 if else-ის მაგალითი თქვენით
 
-/* აქ უნდა გაიგოთ თქვენი პროდუქტის სიის ტიპი
+// // // >>> კოდი დაწერეთ აქ
+ let mainQuestion = prompt('Choose your gender (M) or (F)');
+ let checkName = prompt('What Is Your Name? ');
 
-// მაგ: console.log(typeof age)*/
-
-console.log(typeof Phone);
-console.log(typeof brand);
-console.log(typeof CreateDate);
-console.log(typeof ProductQuant);
-
-
-
-/*
-// ოპერატორები არითმეტიკა */
-
-let num = 5;
-
-// გამოიყენეთ ყველა ვარიანტი რომლითაც შეგვიძლია ამ ციფრის გაზრდა
-
-// >>> კოდი დაწერეთ აქ 
-// num+=10; damateba
-//  num*=10;  gamravleba
-// xarisxi
-num**=5;
-//
-
-console.log(num)
+ if(mainQuestion=='m' || mainQuestion=='M'){
+     window.alert('Hello Miss '+checkName);
+ }
+ else if (mainQuestion=='f' || mainQuestion=='F'){
+     window.alert('Hello Mr '+checkName);
+}
+ else if (mainQuestion!='m' && mainQuestion!='M'){
+    window.alert('Gender is incorect');
+}
+else if (mainQuestion!='f' && mainQuestion!='F'){
+    window.alert('Gender is incorect');
+}
+ else{
+     window.alert('Error');
+}
 
 
-/*
-// სცადეთ შეკრიბოთ განსხვავებული ტიპის მქონე 
-// მნიშვნელობები და გაიგოთ შეკრებილი მონაცემების ტიპი
 
-// >>> კოდი დაწერეთ აქ  */
- 
-
-//var sum = Phone + ProductQuant;
-
-//var sum = isHigh + age;
-
-var sum = isHigh + Phone;
-
-console.log(typeof sum);
+// // //
 
 
+// // // გადაიყვანეთ If ternary operator-ში მაგ. (true ? 1 : 2) 
+
+// // // >>> კოდი დაწერეთ აქ
+
+(mainQuestion=='m' || mainQuestion=='M') ? window.alert('Hello Miss '+checkName) : window.alert('Hello Mr '+checkName);
+
+
+// // //
+
+
+
+// // /*
+// //   ჩვენ გვაქვს ოთხი ფერი რომელთაც აქვთ
+// //   კონკრეტული ციფრები მინიჭებული (თეთრი=4, 
+// //   წითელი=3, მწვანე=2, ლურჯი=1, შავი=0, 
+// //   სხვა ყველა ფერი=undefinde)
+// // */
+
+ let colorId = 3
+
+// // // დაწერეთ if ისე, რომ როდესაც ჩვენ
+// // // შევცვლით მაღლა განსაზღვრულ ცვლადს გავიგოთ
+// // // ამ აიდის ფერი (ფერი გამოიტანეთ კონსოლში ტექსტის
+// // // სახით)
+
+
+// >>> კოდი დაწერეთ აქ
+ if (colorId==0) {
+     console.log('შავი')
+}
+else if (colorId==1) {
+    console.log('ლურჯი');
+}
+ else if (colorId==2) {
+    console.log('მწვანე');
+ }
+ else if (colorId==3) {
+    console.log('წითელი');
+}
+ else if (colorId==4) {
+    console.log('თეთრი');
+ }
+ else{
+     console.log('მონაცემები არათავსებადია');
+ }
+// // //
+
+
+
+// // // გადაიყვანეთ If ternary operator-ში მაგ. (true ? 1 : 2) 
+
+// // // >>> კოდი დაწერეთ აქ
+(colorId==0) ? console.log('შავი') : (colorId==1) ? console.log('ლურჯი') : (colorId==2) ? console.log('მწვანე') : (colorId==3) ? console.log('წითელი') : (colorId==4) ? console.log('თეთრი') : console.log('მონაცემები არათავსებადია');
+
+// // //
+
+
+// // // <------- დავალება Switch ---------#### //
+
+// // // ცადეთ იგივე გააკეთოთ რაც წინა დავალებაში
+// // // ოღონდ ამჯერად Switch-ის დახმარებით
+
+
+// // // >>> კოდი დაწერეთ აქ
+
+ switch (colorId) {
+     case 0:
+         console.log('შავი');
+         break;
+     case 1:
+         console.log('ლურჯი');
+         break;
+    case 2:
+        console.log('მწვანე');
+         break;
+     case 3:
+        console.log('წითელი');
+         break;
+     case 4:
+         console.log('თეთრი');
+         break;
+     default:
+         console.log('მონაცემები არათავსებადია');
+         break;
+}
+
+
+
+
+// // //
+
+
+
+// // //  ||
+// // //  ||
+// // //  ||
+// // // \  /
+// // //  \/
+
+// // /*
+// //     ეს დავალება რომ ნახოთ გამოიყენეთ HTML,
+// //     ჩვენი მიზანია ავაწყოთ ჩეთ ბოტი რომელთანაც ვისაუბრებთ
+// //     როგორც ხედავთ დაბლა გამზადებული მაქვს კოდის გარკვეული
+// //     ნაწილი ეს არის ფუნქცია რომელსაც მომავალში გავივლით
+// //     კონკრეტულად ეს ფუნქცია არის რეკურსიული, რეკურსია
+// //     არის პროცესი როდესაც ფუნქცია თავის თავს იძახებს ჩვენ კი
+// //     იმიტომ ვიყენებთ ამას, რომ ყოველ ჯერზე როდესად რაღაცის თქმა
+// //     დაგვჭირდება მზად იყოს სასაუბროდ ჩვენი ბოტი
+// //     // კოდში მოათავსეთ Switch რომლითაც დააპროგნოზებთ სასაუბრო
+// //     // სიტყვებს ააწყობთ მინი ჩათ ბოტს.
+// //     მაგ. 
+// //     """"
+// //       case "გამარჯობა":
+// //         alert("გამარჯობა");
+// //         break;
+// //     """"
+// // */
+ const bot = document.getElementById("bot");
+ bot.addEventListener("click", function(){
+     myFun();
+ });
+
+ function myFun() {
+// //   //let x = prompt("მე მზად არ ვარ პასუხისათვის")
+
+// //   // >>> კოდი დაწერეთ აქ გამოიყენეთ Switch
+   let x = prompt('Hello What Do You Want?');
+   
+     switch (x) {
+         case 'Hello':
+             window.alert('Hello');
+             break;
+         case 'Who are you?':
+             window.alert('Hello I\'m Gocha');
+             break;
+         case 'What is your working hours?':
+             window.alert('09:00-18:00');
+             break;
+         default:
+             window.alert('Bye Bye');
+             break;
+    }
+
+// //   //
+
+// //   // რეკურსიული ფუნქცია
+// //   //myFun()
+} 
